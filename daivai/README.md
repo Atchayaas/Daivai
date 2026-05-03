@@ -1,10 +1,9 @@
-# DaivAI – AI Chat Interface
+DaivAI – AI Chat Interface
 
 A ChatGPT-style AI chat web application built with React, created as a frontend developer task for Daiwak Technologies.
 
 ---
-
-## Quick Start
+ Quick Start
 
 ```bash
 npm install
@@ -12,15 +11,13 @@ npm run dev    # http://localhost:5173
 npm run build  # production build
 ```
 
----
+---Features Implemented
 
-## Features Implemented
-
-### Layout
+ Layout
 - Left Sidebar — logo, "+ New Chat" button, chat history grouped by time (Today / Yesterday / Past 7 days / Older)
 - Right Chat Panel — header with AI engine dropdown, scrollable message area, input box
 
-### Chat Management
+Chat Management
 - Create new chat sessions from the sidebar or header button
 - Switch between chats by clicking sidebar items
 - Rename chats inline (pencil icon → Enter to save, Escape to cancel)
@@ -28,22 +25,22 @@ npm run build  # production build
 - Auto-generated chat titles from the first message
 - Full chat state persisted to `localStorage` — survives page refresh
 
-### Messaging
+ Messaging
 - User and AI messages rendered as distinct left/right bubbles
 - Simulated AI responses with a realistic typing delay (900–1700ms)
 - Animated typing indicator while the AI responds
 - Timestamps on every message
 - "Edited" label shown after a user edits a message
 
-### Message Actions (hover on user messages)
-- **Edit** — modal popup; Cmd/Ctrl + Enter or Save Changes button
-- **Delete** — confirmation popup before removal
+Message Actions (hover on user messages)
+- Edit — modal popup; Cmd/Ctrl + Enter or Save Changes button
+- Delete — confirmation popup before removal
 
-### AI Engine Selector
+ AI Engine Selector
 - Four engines: Neural Nexus, Cerebral Prime, Synapse Ultra, Logic Core
 - Engine name shown in each AI message attribution
 
-### UI / UX
+UI / UX
 - Clean white theme with subtle borders and shadows
 - Sora + DM Mono font pairing
 - Fade/slide-in animations on messages and modals
@@ -53,20 +50,16 @@ npm run build  # production build
 - Basic responsive layout
 
 ---
+Tech Stack
 
-## Tech Stack
-
-| Layer | Choice |
-|---|---|
-| Framework | React 18 (Vite) |
-| State management | Context API |
-| Markdown | react-markdown + remark-gfm |
-| Icons | lucide-react |
-| Persistence | localStorage |
+Layer,Choice 
+| Framework, React 18 (Vite) |
+| State management, Context API |
+| Markdown , react-markdown + remark-gfm |
+| Icons , lucide-react |
+| Persistence , localStorage |
 
 ---
-
-## Project Structure
 
 ```
 src/
@@ -88,15 +81,15 @@ src/
 
 ---
 
-## Assumptions
+Assumptions
 
-- **AI responses are simulated** — no API key needed. Swapping in a real OpenAI/Gemini key is a straightforward change in `ChatContext.jsx`.
-- **No auth** — single anonymous user session.
+- AI responses are simulated — no API key needed. Swapping in a real OpenAI/Gemini key is a straightforward change in `ChatContext.jsx`.
+- No auth — single anonymous user session.
 - Pixel-perfect Figma replication was not the goal; structure, layout and interactions match the spec.
 
 ---
 
-## Submission
+ Submission
 
-GitHub repository: *(add link here)*  
-Email: career@daivtech.com
+GitHub repository: https://github.com/Atchayaas/Daivai
+
