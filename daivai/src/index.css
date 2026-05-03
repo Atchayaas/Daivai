@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7f7f8;
+  --bg-tertiary: #efefef;
+  --bg-hover: #f2f2f3;
+  --bg-active: #e8e8ed;
+  --border: #e5e5e5;
+  --border-light: #f0f0f0;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --text-muted: #a0a0a0;
+  --accent: #0f0f0f;
+  --accent-soft: #2563eb;
+  --accent-hover: #1d4ed8;
+  --user-bubble: #1a1a1a;
+  --user-text: #ffffff;
+  --ai-bubble: #f7f7f8;
+  --ai-text: #1a1a1a;
+  --danger: #dc2626;
+  --danger-soft: #fef2f2;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.14);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --sidebar-width: 268px;
+  --font-sans: 'Sora', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+  --transition: 0.18s ease;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: var(--font-sans);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+button { font-family: var(--font-sans); cursor: pointer; border: none; background: none; outline: none; }
+input, textarea { font-family: var(--font-sans); outline: none; border: none; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideInLeft { from { opacity: 0; transform: translateX(-10px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes scaleIn { from { opacity: 0; transform: scale(0.94); } to { opacity: 1; transform: scale(1); } }
+@keyframes typingDot { 0%, 80%, 100% { transform: scale(0.5); opacity: 0.3; } 40% { transform: scale(1); opacity: 1; } }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }

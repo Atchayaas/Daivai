@@ -1,0 +1,10 @@
+.app-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+@media (max-width: 640px) {
+  :root { --sidebar-width: 220px; }
+}
